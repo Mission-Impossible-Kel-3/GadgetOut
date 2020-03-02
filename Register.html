@@ -2,27 +2,48 @@
 <html>
 <head>
 	<title>Sign Up</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="datepicker/bootstrap-datepicker.js"></script>
+	<link rel="stylesheet" href="datepicker/datepicker.css">
+	<script>
+		$(function () {
+		$('#datepicker').datepicker({
+		autoclose: true
+	});
+	});
+	</script>
 </head>
 <body>
 	<h2 class="Judul"> Register </h2>
 	<label class="Username">Username : </label>
 	<input type="text" class="Username" placeholder="Username..." />
 	<label class="Username">Nama Lengkap : </label>
-	<input type="text" class="Username" placeholder="Username..." />
-	<label class="Username">Email : </label>
-	<input type="text" class="Username" placeholder="Username..." />
-	<label class="Username">Password : </label>
-	<input type="text" class="Username" placeholder="Username..." />
+	<input type="text" class="Name" placeholder="Nama Lengkap..." />
+	<label class="Email">Email : </label>
+	<input type="text" class="Email" placeholder="Email..." />
+	<label class="Password">Password : </label>
+	<input type="Password" class="Password" placeholder="Password..." />
 	<label class="Username">Confirm Password :</label>
-	<input type="text" class="Username" placeholder="Username..." />
+	<input type="Password" class="CPassword" placeholder="Confirm Password..." />
 
-	<form>
+	<div class="container">
+	<div class="row">
+		<div class="col-sm-4">
+		<h2 class="page-header">Form Input Tanggal</h2>
+			<form>
 				<div class="form-group">
 					<label>Tanggal</label><br>
 					<input type="text" id="datepicker" class="form-control" placeholder="Tanggal"><br>
 					
 					<button class="btn btn-danger" type="submit">Simpan</button>
 				</div>	
-	</form>
+			</form>
+		</div>	
+	</div>	
+</div>
 </body>
 </html>
