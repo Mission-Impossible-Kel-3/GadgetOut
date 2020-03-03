@@ -4,14 +4,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GadgetOut</title>
-    <script src="js/login.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body onload="loader()">
-    <div id="loggedIn">
+<body>
+    <!-- HEADERR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/logo2.png" style="width: 130px;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Laptop</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Smartphone</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Gaming</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Smartwatch</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-success my-2 my-sm-0" type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- END HEADERR -->
+
+    <div class="container">
+
+        <!-- CONTENT -->
+
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-8">
+                <img class="img-responsive" width="100%" src="img/artikel-1.jpg">
+            </div>
+            <div class="col-md-4">
+                <br>
+                <span class="main-article-category">Acer Predator Triton 900</span>
+                <br>
+                <span class="main-article-title">Keunggulan utama laptop gaming Predator Triton 900 Acer yang baru
+                    adalah ....
+                </span>
+                <br><br>
+                <span>By <span class="author-name">Afdal RDH.</span></span>
+            </div>
+        </div>
+        <br><br>
+        <span class="recent-articles">Recent Article</span>
+        <hr>
+
+        <div class="row pb-5">
+            <div class="col-md-8">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="img/artikel-2.jpg" width="100%" class="img-responsive">
+                    </div>
+                    <div class="col-md-8">
+                        <br>
+                        <span class="sub-article-date">2 MARET 2020</span>
+                        <br>
+                        <span class="sub-article-title">Samsung Galaxy S20 Ultra</span>
+                        <br>
+                        <span class="sub-article-author">By <span class="author-name">Hargi</span></span>
+                        <br>
+                        <span class="sub-article-category">Smartphone</span>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="img/artikel-2.jpg" width="100%" class="img-responsive">
+                    </div>
+                    <div class="col-md-8">
+                        <br>
+                        <span class="sub-article-date">2 MARET 2020</span>
+                        <br>
+                        <span class="sub-article-title">Samsung Galaxy S20 Ultra</span>
+                        <br>
+                        <span class="sub-article-author">By <span class="author-name">Hargi</span></span>
+                        <br>
+                        <span class="sub-article-category">Smartphone</span>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="img/artikel-2.jpg" width="100%" class="img-responsive">
+                    </div>
+                    <div class="col-md-8">
+                        <br>
+                        <span class="sub-article-date">2 MARET 2020</span>
+                        <br>
+                        <span class="sub-article-title">Samsung Galaxy S20 Ultra</span>
+                        <br>
+                        <span class="sub-article-author">By <span class="author-name">Hargi</span></span>
+                        <br>
+                        <span class="sub-article-category">Smartphone</span>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="text-right"><span class="demo-link">More</span></div>
+
+            </div>
+            
+            <!-- KANAN -->
+            <div class="col-md-4">
+                <span class="favorite">FAVORITE ARTICLE</span>
+                <br><br>
+                <span>1. Smartphone</span><br>
+                <span>2. Laptop</span>
+            </div>
+
+        </div>
     </div>
+
+    <!-- END CONTENT -->
+
+    <!-- FOOTER -->
+
+    <footer class="page-footer bg-primary pt-4  text-white">
+        <div class="container">
+            <div class="container-fluid text-center text-md-left">
+                <div class="row pt-3">
+                    <div class="col-md-6 mt-md-0 mt-3">
+                        <h5 class=""><img src="img/logo2.png" width="30%"></h5>
+                        <p>Sebuah website yang diciptakan oleh orang - orang berinteligen tinggi demi menyelesaikan sebuah tugas proyek yang diberikan rutin di hari senin.</p>
+                    </div>
+                    <hr class="clearfix w-100 d-md-none pb-3">
+                    <div class="col-md-3 mb-md-0 mb-3">
+                        <h5 class="text-uppercase">Links</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#!">Laptop</a>
+                            </li>
+                            <li>
+                                <a href="#!">Smartphone</a>
+                            </li>
+                            <li>
+                                <a href="#!">Gaming</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 mb-md-0 mb-3">
+                        <h5 class="text-uppercase">Follow Us :</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!">Afdal RDH.</a>
+                            </li>
+                            <li>
+                                <a href="#!">Mizan NQ.</a>
+                            </li>
+                            <li>
+                                <a href="#!">M Hargi M.</a>
+                            </li>
+                            <li>
+                                <a href="#!">M Sakhi H.</a>
+                            </li>
+                            <li>
+                                <a href="#!">Reynaldi RS.</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright text-center py-3 text-white">© 2020 Copyright: 
+                <a style="color:white; text-decoration: underline;" href="https://github.com/Mission-Impossible-Kel-3">Mission Impossible</a> with ♥
+            </div>
+            <!-- Copyright -->
+
+    </footer>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
