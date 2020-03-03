@@ -11,7 +11,11 @@
     text-decoration: underline;
 }
 
-.recent-article{
+hr{
+    background-color: #F05526;
+}
+
+.recent-articles{
     font-size: 1.7em;
     font-weight: bold;
 }
@@ -38,4 +42,8 @@
 .favorite{
     font-weight: bold;
     color: rgba(0,0,0,0.4);
+}
+
+.page-footer a{
+    color: white;
 }
