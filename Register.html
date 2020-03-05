@@ -2,44 +2,127 @@
 <html>
 
 <head>
-	<title>Sign Up</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<script src="js/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="datepicker/bootstrap-datepicker.js"></script>
-	<link rel="stylesheet" href="datepicker/datepicker.css">
-	<script>
-		$(function () {
-		$('#datepicker').datepicker({
-		autoclose: true
-	});
-	});
-	</script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GadgetOut</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" type="img/png" href="img/icon.png" style="width: 100%;" />
 </head>
 
 <body>
-	<h2 class="Judul"> Register </h2>
-	<label class="Username">Username : </label>
-	<input type="text" class="Username" placeholder="Username..." />
-	<label class="Username">Nama Lengkap : </label>
-	<input type="text" class="Name" placeholder="Nama Lengkap..." />
-	<label class="Email">Email : </label>
-	<input type="text" class="Email" placeholder="Email..." />
-	<label class="Password">Password : </label>
-	<input type="Password" class="Password" placeholder="Password..." />
-	<label class="Username">Confirm Password :</label>
-	<input type="Password" class="CPassword" placeholder="Confirm Password..." />
+	<!-- HEADERR -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		<div class="container">
+			<a class="navbar-brand" href="index.html"><img src="img/logo2.png" style="width: 130px;"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-	<form>
-		<div class="form-group">
-			<label>Tanggal</label><br>
-			<input type="text" id="datepicker" class="form-control" placeholder="Tanggal"><br>
-
-			<button class="btn btn-danger" type="submit">Simpan</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="Artikel2.html">Laptop</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="Artikel3.html">Smartphone</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="Artikel5.html">Gaming</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="Artikel4.html">Smartwatch</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="About Us.html">About Us <b style="color: #F05526;">♥</b></a>
+					</li>
+				</ul>
+				<div class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					<a href="login.html">
+						<button class="btn btn-success my-2 my-sm-0">Login</button>
+					</a>
+				</div>
+			</div>
 		</div>
-	</form>
+	</nav>
+	<br><br>
+	<!-- END HEADERR -->
+	<div class="container">
+		<h2 class="Judul"> Register </h2><br>
+		<label class="Username">Username : </label>
+		<input type="text" class="Username" placeholder="Username..." /><br>
+		<label class="Username">Nama Lengkap : </label>
+		<input type="text" class="Name" placeholder="Nama Lengkap..." /><br>
+		<label class="Email">Email : </label>
+		<input type="text" class="Email" placeholder="Email..." /><br>
+		<label class="Password">Password : </label>
+		<input type="Password" class="Password" placeholder="Password..." /><br>
+		<label class="Username">Confirm Password :</label>
+		<input type="Password" class="CPassword" placeholder="Confirm Password..." /><br>
+
+				<label>Tanggal</label><br>
+				<input type="text" id="datepicker" class="form-control" placeholder="Tanggal"><br>
+
+				<button class="btn btn-danger" type="submit">Simpan</button>
+				<br><br><br>
+
+	</div>
+
+	<footer class="page-footer bg-primary pt-4  text-white">
+        <div class="container">
+            <div class="container-fluid text-center text-md-left">
+                <div class="row pt-3">
+                    <div class="col-md-6 mt-md-0 mt-3">
+                        <h5 class=""><img src="img/logo2.png" width="30%"></h5>
+                        <p>Sebuah website yang diciptakan oleh orang - orang berinteligen tinggi demi menyelesaikan sebuah tugas proyek yang diberikan rutin di hari senin.</p>
+                    </div>
+                    <hr class="clearfix w-100 d-md-none pb-3">
+                    <div class="col-md-3 mb-md-0 mb-3">
+                        <h5 class="text-uppercase">Links</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="About Us.html">About Us</a>
+                            </li>
+                            <li>
+                                <a href="Artikel1.html">Laptop</a>
+                            </li>
+                            <li>
+                                <a href="Artikel3.html">Smartphone</a>
+                            </li>
+                            <li>
+                                <a href="Artikel5.html">Gaming</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 mb-md-0 mb-3">
+                        <h5 class="text-uppercase">Follow Us :</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="html://www.instagram.com/afdalrdh">Afdal RDH.</a>
+                            </li>
+                            <li>
+                                <a href="#!">Mizan NQ.</a>
+                            </li>
+                            <li>
+                                <a href="#!">M Hargi M.</a>
+                            </li>
+                            <li>
+                                <a href="#!">M Sakhi H.</a>
+                            </li>
+                            <li>
+                                <a href="#!">Reynaldi RS.</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright text-center py-3 text-white">© 2020 Copyright: 
+                <a style="color:white; text-decoration: underline;" href="https://github.com/Mission-Impossible-Kel-3">Mission Impossible</a> with <b style="color: #F05526;">♥</b>
+            </div>
+            <!-- Copyright -->
+    </footer>
 
 </body>
 
