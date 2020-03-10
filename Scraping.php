@@ -1,0 +1,152 @@
+<?php
+$json = file_get_contents('result.json');
+$data = json_decode($json, true);
+?>
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="img/png" href="img/icon.png" style="width: 100%;" />
+    </head>
+
+    <body>
+        <!-- HEADERR -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="img/logo2.png" style="width: 130px;"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="Artikel2.html">Laptop</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="Artikel3.html">Smartphone</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="Artikel5.html">Gaming</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="Artikel4.html">Smartwatch</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="About Us.html">About Us <b style="color: #F05526;">♥</b></a>
+                        </li>
+                    </ul>
+                    <div class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <a href="login.html">
+                            <button class="btn btn-success my-2 my-sm-0">Login</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- END HEADERR -->
+        <div class="col-md-12 text-center mt-3" style="color: #F05526;">
+            <h2><b>Data Scraping</b></h2>
+        </div>
+        <br>
+        <div class="row">
+            <div class="container">
+                <div class="table-responsive-sm">
+                    <table class="table table-sm table-bordered">
+                        <caption>Republika Online</caption>
+                        <thead>
+                            <tr class="table-primary">
+                                <th scope="col">No</th>
+                                <th scope="col">Judul</th>
+                                <th scope="col">Kategori</th>
+                                <th scope="col">Waktu Publish</th>
+                                <th scope="col">Waktu Scraping</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php for($i=0;$i<count($data);$i++){
+                                $row = $data[$i];    
+                            ?>
+                            <tr>
+                                <td><?= $i+1; ?></td>
+                                <td><?= $row['category']; ?></td>
+                                <td><?= $row['title']; ?></td>
+                                <td><?= $row['upload']; ?></td>
+                                <td><?= $row['update']; ?></td>
+                            </tr>
+                            <?php } ?>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- FOOTER -->
+
+        <footer class="page-footer bg-primary pt-4  text-white mt-5">
+            <div class="container">
+                <div class="container-fluid text-center text-md-left">
+                    <div class="row pt-3">
+                        <div class="col-md-6 mt-md-0 mt-3">
+                            <h5 class=""><img src="img/logo2.png" width="30%"></h5>
+                            <p>Sebuah website yang diciptakan oleh orang - orang berinteligen tinggi demi menyelesaikan
+                                sebuah tugas proyek yang diberikan rutin di hari senin.</p>
+                        </div>
+                        <hr class="clearfix w-100 d-md-none pb-3">
+                        <div class="col-md-3 mb-md-0 mb-3">
+                            <h5 class="text-uppercase">Links</h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#!">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Laptop</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Smartphone</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Gaming</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 mb-md-0 mb-3">
+                            <h5 class="text-uppercase">Follow Us :</h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="html://www.instagram.com/afdalrdh">Afdal RDH.</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Mizan NQ.</a>
+                                </li>
+                                <li>
+                                    <a href="#!">M Hargi M.</a>
+                                </li>
+                                <li>
+                                    <a href="#!">M Sakhi H.</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Reynaldi RS.</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright text-center py-3 text-white">© 2020 Copyright:
+                    <a style="color:white; text-decoration: underline;" href="https://github.com/Mission-Impossible-Kel-3">Mission Impossible</a> with <b style="color: #F05526;">♥</b>
+                </div>
+                <!-- Copyright -->
+        </footer>
+
+        <!-- FOOTER -->
+    </body>
+</html>

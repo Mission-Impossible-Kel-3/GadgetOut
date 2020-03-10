@@ -68,13 +68,24 @@
                         </tr>
                     </thead>
                     <tbody>
+                    <?php
+                        $url='result.json';
+                        $json=file_get_contents($url);
+                        $data=json_decode($json,true);
+                        
+                        for($i=0;$i<count($data);$i++){
+                            $row=$data[$i];
+                    ?>
                         <tr>
-                            <td>a</td>
-                            <td>b</td>
-                            <td>c</td>
-                            <td>d</td>
-                            <td>e</td>
+                            <td><?php echo $i+1 ?></td>
+                            <td><?php echo $row['category'] ?></td>
+                            <td><?php echo $row['title'] ?></td>
+                            <td><?php echo $row['upload'] ?></td>
+                            <td><?php echo $row['update'] ?></td>
                         </tr>
+                    <?php
+                        }
+                        ?>
                     </tbody>
                 </table>
             </div>
