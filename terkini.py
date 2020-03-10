@@ -7,17 +7,17 @@ page = requests.get("https://www.republika.co.id")
 obj = BeautifulSoup(page.text, 'html.parser')
 current = datetime.datetime.now()
 
-latest = {}
+list = []
 count = 0
 
-a = open("result.json", "w")
-a.close()
-
 for terkini in obj.find_all('div', class_='teaser_conten1'):
-    latest['category'] = terkini.find('p').text
-    latest['title'] = terkini.find('h2').text
-    latest['upload'] = terkini.find('div', class_='date').text
-    latest['update'] = current.strftime('%I:%M:%S %p')
-    with open("result.txt", "a") as json_file:
-        json.dump(latest, json_file)
-        json_file.write("\n")
+    latest = {
+        "category": str(terkini.find('p').text),
+        "title": str(terkini.find('h2').text),
+        "upload": str(terkini.find('div', class_='date').text),
+        "update": str(current.strftime('%I:%M:%S %p'))
+    }
+    list.append(latest)
+
+with open("result.json", "w") as json_file:
+    json.dump(list, json_file)
