@@ -1,0 +1,1 @@
+"C:\Users\afdalrdh\AppData\Local\Programs\Python\Python38-32\python.exe" "C:\xampp\htdocs\GadgetOut\terkini.py"
